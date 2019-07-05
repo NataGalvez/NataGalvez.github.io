@@ -2,19 +2,60 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RickandMorty.com</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
-    <!-- <script src="./data/patient/patient.js"></script> -->
-    <!-- <script src="./data/rickandmorty/rickandmorty.js"></script> -->
-    <script src="data.js"></script>
-    <script src="main.js"></script>
+    <header id="header" class="fullHeader">
+      
+      <div>
+        <nav id="menu" class="menu">
+          <ul class="menuNavegation">
+            <li class="current"><a href="">Inicio</a></li>
+            <li class="current"><a href="">Quienes Somos</a></li>
+            <li class="current"><a href="">Capitulos</a></li>
+            <li class="current"><a href="">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="center">
+    <div class="row">
+      <div id="titleHtml">
+        <h1>¡Encuentra a tu personaje favorito!</h1>     
+      </div>
+      <div id="searchEngine" class="search"> 
+        <label for="character" class="search">Personajes</label>
+        <select  id="formCharacter" onChange="buscarPersonaje(this);">
+           <option value=""> Seleccione un Personaje</option>
+        </select>
+        <label for="" class="search">Estatus</label>
+        <select id="formStatus">
+            <option value=""> Seleccione un estatus</option>
+        </select>
+        <label for="" class="search">Especies</label>
+        <select id="formSpecies">
+            <option value=""> Seleccione una especie</option>
+        </select>
+        <label for="" class="search">Genero</label>
+        <select id="formGender">
+            <option value=""> Seleccione un género</option>
+        </select>
+      </div>
+      <br>
+      <br>
+      <div id="btnSearch"class="btnSearch">
+        <button type="button"> Buscar </button>   
+      </div>
+      <div id="results" class="contents"></div>
+    </div>
+      </main>
+    <script src="./data/rickandmorty/rickandmorty.js"></script> 
+    <!--<script src="app.js"></script>-->
+   <!-- <script src="main.js"></script> -->
+   <script src="data.js"></script>
   </body>
 </html>
+        
+        

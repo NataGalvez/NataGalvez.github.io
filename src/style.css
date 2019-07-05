@@ -1,0 +1,11 @@
+body{
+	background: url(https://wallpaperscute.com/wp-content/uploads/2018/04/Rick-and-Morty-iPhone-8-Wallpaper.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	opacity: 0.9;}
+
+
+header{
+	background: rgb(185, 117, 117);
