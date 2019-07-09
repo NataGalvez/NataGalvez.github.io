@@ -1,4 +1,4 @@
-
+    
 const data = RICKANDMORTY.results
 function formRickAndMorty(){
 	for (let i = 0; i < data.length; i++) {
@@ -19,7 +19,7 @@ function formRickAndMorty(){
 	for (let i = 0; i<nuevoStatus.length; i++) {
 		let status=document.getElementById("formStatus");
 		let listStatus= document.createElement("option");
-		listStatus.text=nuevoStatus[i];
+		listStatus.text=nuevoStatus[i]; 
 		listStatus.value=i;
 		status.add(listStatus);
 	}

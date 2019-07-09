@@ -14,7 +14,7 @@ const RICKANDMORTY = {
     "gender": "Male",
     "origin": {
       "name": "Earth (C-137)",
-      "url": "https://wallpaperscute.com/wp-content/uploads/2018/04/Rick-and-Morty-iPhone-8-Wallpaper.jpg",
+      "url": "https://rickandmortyapi.com/api/location/1",
     },
     "location": {
       "name": "Earth (Replacement Dimension)",
