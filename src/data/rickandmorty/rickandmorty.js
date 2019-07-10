@@ -14,7 +14,7 @@ const RICKANDMORTY = {
     "gender": "Male",
     "origin": {
       "name": "Earth (C-137)",
-      "url": "https://rickandmortyapi.com/api/location/1"
+      "url": "https://rickandmortyapi.com/api/location/1",
     },
     "location": {
       "name": "Earth (Replacement Dimension)",

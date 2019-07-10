@@ -1,3 +1,15 @@
+
+const data = RICKANDMORTY.results;
+
+function addDatesSelect(idElement, texto, valor)
+{
+    let character = document.getElementById(idElement);
+    let listName = document.createElement("option");
+    listName.text = texto;
+    listName.value= valor;
+    character.add(listName);
+}
+
 workData.fillSelect(workData.uniques("name"),"formCharacter");
 workData.fillSelect(workData.uniques("status"),"formStatus");
 workData.fillSelect(workData.uniques("species"),"formSpecies");
@@ -20,4 +32,5 @@ document.getElementById("formGender").addEventListener("change", ()=>{
 	let valueSelect=document.getElementById("formGender").value;
 	workData.showCardS(valueSelect,"gender");
 })
+
 
