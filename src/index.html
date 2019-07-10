@@ -6,7 +6,7 @@
     <title>RickandMorty.com</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body onload="llenarDatos()">
     <header id="header" class="fullHeader">
       
       <div>
@@ -28,7 +28,7 @@
       </div>
       <div id="searchEngine" class="search"> 
         <label for="character" class="search">Personajes</label>
-        <select  id="formCharacter" onChange="buscarPersonaje(this);">
+        <select  id="formCharacter">
            <option value=""> Seleccione un Personaje</option>
         </select>
         <label for="" class="search">Estatus</label>
@@ -46,15 +46,18 @@
       </div>
       <br>
       <br>
-      <div id="btnSearch"class="btnSearch">
-        <button type="button"> Buscar </button>   
+      <div id="btnSearch" class="btnSearch">
+        <button type="button" onclick="addImg()"> Buscar </button>   
+      </div>
+      <div id= "tarjeta">
+
       </div>
       <div id="results" class="contents"></div>
     </div>
       </main>
     <script src="./data/rickandmorty/rickandmorty.js"></script> 
     <!--<script src="app.js"></script>-->
-   <!-- <script src="main.js"></script> -->
+   <script src="main.js"></script>
    <script src="data.js"></script>
   </body>
 </html>

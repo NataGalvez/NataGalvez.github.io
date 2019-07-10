@@ -1,63 +1,110 @@
     
-const data = RICKANDMORTY.results
-function formRickAndMorty(){
-	for (let i = 0; i < data.length; i++) {
-		//name+= data[i].name;
-		let character = document.getElementById("formCharacter");
-		let listName = document.createElement("option");
-		listName.text = data[i].name;
-		listName.value= i;
-		character.add(listName);
+
+function llenarDatos()
+{
+	llenarPersonajes("formCharacter");
+	llenarStatus("formStatus");
+	llenarGenero("formGender");
+	llenarEspecies("formSpecies");
+}
+function llenarPersonajes(dato)
+{
+	for (let i = 0; i < data.length; i++) 
+	{
+		addDatesSelect(dato, data[i].name, i);
 	}
+}
+
+//crear funcion para llenar status
+function llenarStatus(idSelect)
+{
+	//Creas variable vacia en formato array.
 	let status=[];
-	for (let i = 0; i< data.length; i++){
-		data[i].status;
+
+	//Recorres los datos.
+	for (let i = 0; i< data.length; i++)
+	{
+		//Obtienes todos los status que existen y los agregas a la variable vacia.
 		status.push(data[i].status);
 	}
+
+	//Creas una nueva variable y la llenas con los status unicos.
 	let nuevoStatus= [...new Set(status)];
 
-	for (let i = 0; i<nuevoStatus.length; i++) {
-		let status=document.getElementById("formStatus");
-		let listStatus= document.createElement("option");
-		listStatus.text=nuevoStatus[i]; 
-		listStatus.value=i;
-		status.add(listStatus);
+	//Recorres los datos unicos.
+	for (let i = 0; i < nuevoStatus.length; i++) 
+	{
+		//Le envias los datos a la funcion.
+		addDatesSelect(idSelect, nuevoStatus[i], i);
+	}
+}
+
+function llenarGenero(idGenero)
+{
+	//crear variable vacia para agregar elementos
+	let genero =[];
+
+	//hacer un for que rcorra los datos y tome todos los generos
+	for (let i = 0; i < data.length; i++) 
+	{ 
+		//usar la variable con push(llenar con generos)
+		genero.push(data[i].gender);
+	}
+	let nuevoGenero = [...new Set(genero)]
+
+	for (let i = 0; i < nuevoGenero.length; i++) {
+		addDatesSelect(idGenero, nuevoGenero[i], i);
+	}
+		
+	
+}
+
+
+function llenarEspecies(idEspecies)
+{
+	let especie =[];
+
+	for (let i = 0; i < data.length; i++) 
+	{
+		especie.push(data[i].species);
 	}
 
-	let species=[];
-	for (let i = 0; i< data.length; i++) {
-		data[i].species;
-		species.push(data[i].species);
-	}
-	let nuevoSpecies= [...new Set(species)];
+	let nuevoEspecie = [...new Set (especie)]
 
-	for (let i = 0; i< nuevoSpecies.length; i++) {
-		let species=document.getElementById("formSpecies");
-		let listSpecies= document.createElement("option");
-		listSpecies.text=nuevoSpecies[i];
-		listSpecies.value=i;
-		species.add(listSpecies);
+	for (let i = 0; i < nuevoEspecie.length; i++) {
+		addDatesSelect(idEspecies,nuevoEspecie[i],i);
+		
 	}
-	console.log(nuevoSpecies)
 
-	let gender=[];
-	for (let i = 0; i< data.length; i++) {
-		data[i].gender;
-		gender.push(data[i].gender);
+}
+/*
+function addImg()
+{
+	let todosLosSelect = document.getElementsByTagName("select")
+	let e;
+	let datosPersonajes =[];
+	let getPersonaje;
+	for (let i = 0; i < todosLosSelect.length; i++) 
+	{
+		e = todosLosSelect[i];
+		datosPersonajes.push(e.options[e.selectedIndex].text);
 	}
-	let nuevoGender= [...new Set(gender)];
 
-	for (let i = 0; i< nuevoGender.length; i++) {
-		let gender=document.getElementById("formGender");
-		let listGender= document.createElement("option");
-		listGender.text=nuevoGender[i];
-		listGender.value=i;
-		gender.add(listGender);
+	for (let i = 0; i < data.length; i++) 
+	{
+		if(datosPersonajes[0] == data[i].name && datosPersonajes[1] == data[i].status && datosPersonajes[2] == data[i].species && datosPersonajes[3] == data[i].gender)
+		{
+			getPersonaje = data[i];
+		}
 	}
-	console.log(nuevoGender)
+	let idTarjeta = document.getElementById("tarjeta");
+	let img = document.createElement("img");
+	img.src = getPersonaje.image;
+	let  nombre = getPersonaje.name;
+	console.log(nombre);
+	idTarjeta.appendChild(img)
+}
 
-};
-formRickAndMorty(data);
 /*window.character = character;
 var data = RICKANDMORTY.results
 const character = () => {
