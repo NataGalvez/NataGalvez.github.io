@@ -78,7 +78,7 @@ function llenarEspecies(idEspecies)
 	}
 
 }
-
+/*
 function addImg()
 {
 	let todosLosSelect = document.getElementsByTagName("select")
@@ -105,8 +105,8 @@ function addImg()
 	console.log(nombre);
 	idTarjeta.appendChild(img)
 }
-
-/*window.character = character;
+/*
+window.character = character;
 var data = RICKANDMORTY.results
 const character = () => {
 	for (let i = 0; i < data.length; i++) 
@@ -119,9 +119,9 @@ const character = () => {
 			
 	}
   };
-*/
 
-const data=RICKANDMORTY.results;
+
+/*const data=RICKANDMORTY.results;
 window.workData = {
 	uniques: (property)=>{
 		let allArr=[];
