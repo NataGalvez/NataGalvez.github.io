@@ -16,27 +16,27 @@ document.getElementById("formCharacter").addEventListener("change", ()=>{
 	cleanDiv();
 	dinamics();
 	let valueSelect=document.getElementById("formCharacter").value;
-	workData.showCard(valueSelect);
+	workData.showCard(valueSelect,"name");
 })
 document.getElementById("formStatus").addEventListener("change", ()=>{
 	cleanDiv();
 	dinamics();
 	let valueSelect=document.getElementById("formStatus").value;
-	workData.showCardS(valueSelect,"status");
+	workData.showCard(valueSelect,"status");
 	
 })
 document.getElementById("formSpecies").addEventListener("change", ()=>{
 	cleanDiv();
 	dinamics();
 	let valueSelect=document.getElementById("formSpecies").value;
-	workData.showCardS(valueSelect,"species");
+	workData.showCard(valueSelect,"species");
 	
 })
 document.getElementById("formGender").addEventListener("change", ()=>{
 	cleanDiv();
 	dinamics();
 	let valueSelect=document.getElementById("formGender").value;
-	workData.showCardS(valueSelect,"gender");
+	workData.showCard(valueSelect,"gender");
 	
 })
 
