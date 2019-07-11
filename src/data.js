@@ -20,16 +20,9 @@ window.workData = {
 			valueSelect.add(list);
 		}
 	},
-	cleanDiv: ()=>{
-		document.getElementById("result").innerHTML="";
-	},
-		
 	showCard: (valueSelect)=>{
 		let arr=["image","name","status","species","gender"];
 		let arrSpanish=["Imagen","Nombre", "Estado", "Especie","Genero"];
-		div=document.getElementById("result");
-		fatherDiv=document.createElement("div");
-		fatherDiv.className="etiquet";
 		div.appendChild(fatherDiv);
 			for (let i = 0; i <arr.length; i++) {
 				if (arr[i]=="image") {
@@ -44,7 +37,7 @@ window.workData = {
 			}
 	},
 	showCardS: (valueSelect,propiedad)=>{
-		workData.cleanDiv();
+		//workData.cleanDiv();
 		for (let i = 0; i < data.length; i++) {
 			if(valueSelect===data[i][propiedad]){
 				workData.showCard(i);
