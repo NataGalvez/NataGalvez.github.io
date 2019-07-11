@@ -1,4 +1,6 @@
 # **Data Lovers**
+**Rick And Morty**
+
 Este proyecto consiste en una pagina web con datos de la serie Rick and Morty, podrás seleccionar a tu personaje favorito,seleccionar el estado, origen género, y finalmente podrás ver su ficha.
 además en esta página encontrarán enlaces para ver capitulos, para ir a la comunidad de la serie y estadística.
 

@@ -78,7 +78,7 @@ function llenarEspecies(idEspecies)
 	}
 
 }
-/*
+
 function addImg()
 {
 	let todosLosSelect = document.getElementsByTagName("select")
