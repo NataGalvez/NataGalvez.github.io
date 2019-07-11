@@ -21,20 +21,20 @@ function llenarStatus(idSelect)
 	//Creas variable vacia en formato array.
 	let status=[];
 
-	//Recorres los datos.
+	//Recorriendo los datos.
 	for (let i = 0; i< data.length; i++)
 	{
-		//Obtienes todos los status que existen y los agregas a la variable vacia.
+		//Obtieniendo todos los status que existen y los agregas a la variable vacia.
 		status.push(data[i].status);
 	}
 
-	//Creas una nueva variable y la llenas con los status unicos.
+	//Creando una nueva variable y la llenas con los status unicos.
 	let nuevoStatus= [...new Set(status)];
 
-	//Recorres los datos unicos.
+	//Recorro los datos unicos.
 	for (let i = 0; i < nuevoStatus.length; i++) 
 	{
-		//Le envias los datos a la funcion.
+		//Le envio los datos a la funcion.
 		addDatesSelect(idSelect, nuevoStatus[i], i);
 	}
 }
@@ -77,7 +77,7 @@ function llenarEspecies(idEspecies)
 	}
 
 }
-/*
+
 function addImg()
 {
 	let todosLosSelect = document.getElementsByTagName("select")
