@@ -1,20 +1,25 @@
-
-    
-
-function llenarDatos()
-{
-	llenarPersonajes("formCharacter");
-	llenarStatus("formStatus");
-	llenarGenero("formGender");
-	llenarEspecies("formSpecies");
-}
-function llenarPersonajes(dato)
-{
-	for (let i = 0; i < data.length; i++) 
-	{
-		addDatesSelect(dato, data[i].name, i);
-	}
-}
+const data= window.RICKANDMORTY.results; 
+window.workData = { 
+	uniques: (property)=>{
+		let allArr=[];
+		for (let i = 0; i < data.length; i++) {
+			allArr.push(data[i][property]);
+		}
+		return [...new window.Set(allArr)]
+	},
+	fillSelect: (uniquesArr, combobox)=>{
+		for (let i = 0; i < uniquesArr.length; i++) {
+			let valueSelect= document.getElementById(combobox);
+			let list=document.createElement("option");
+			list.text= uniquesArr[i];
+			if (combobox==="formCharacter") {
+				list.value= i;
+			}else{
+				list.value= uniquesArr[i];
+			}
+			valueSelect.add(list);
+		}
+	},
 
 //crear funcion para llenar status
 function llenarStatus(idSelect)
@@ -78,7 +83,7 @@ function llenarEspecies(idEspecies)
 	}
 
 }
-/*
+
 function addImg()
 {
 	let todosLosSelect = document.getElementsByTagName("select")
@@ -119,10 +124,10 @@ const character = () => {
 			
 	}
   };
-*/
+
 
 const data=RICKANDMORTY.results;
-window.workData = {
+
 	uniques: (property)=>{
 		let allArr=[];
 		for (let i = 0; i < data.length; i++) {
@@ -143,6 +148,7 @@ window.workData = {
 			valueSelect.add(list);
 		}
 	},
+	window.workData = { 
 	cleanDiv: ()=>{
 		document.getElementById("result").innerHTML="";
 	},
@@ -174,4 +180,4 @@ window.workData = {
 		}
 	}
 }
-
+*/
