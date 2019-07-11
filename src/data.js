@@ -22,7 +22,7 @@ window.workData = {
 	},
 	cleanDiv: ()=>{
 		document.getElementById("result").innerHTML="";
-	}
+	},
 		
 	showCard: (valueSelect)=>{
 		let arr=["image","name","status","species","gender"];
@@ -53,7 +53,7 @@ window.workData = {
 	}
 }
 
-//crear funcion para llenar status
+/*crear funcion para llenar status
 function llenarStatus(idSelect)
 {
 	//Crear variable vacia en formato array.
@@ -142,3 +142,4 @@ function addImg()
 	console.log(nombre);
 	idTarjeta.appendChild(img)
 }
+*/
