@@ -28,6 +28,7 @@ a{
 body{
 	background-color: #E58137;
 }
+
 .margin{
 	border: 1px solid;
 }
@@ -60,3 +61,21 @@ body{
 
 header{
 	background: rgb(185, 117, 117); 
+
+.contents{
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 17px;
+	float: left;
+
+
+	
+
+}
+.etiquet{
+	display: inline-block;
+}
+.search{
+	display: inline;
+}
+
