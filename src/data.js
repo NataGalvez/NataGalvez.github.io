@@ -18,7 +18,7 @@ function llenarPersonajes(dato)
 //crear funcion para llenar status
 function llenarStatus(idSelect)
 {
-	//Creas variable vacia en formato array.
+	//Crear variable vacia en formato array.
 	let status=[];
 
 	//Recorriendo los datos.
