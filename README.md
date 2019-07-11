@@ -425,8 +425,7 @@ Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
 5. A codear se ha dicho! :rocket:
 
 <!--
-En este proyecto deberás trabajar colaborativamente. Para ello, una de las
-integrantes del equipo deberá forkear el repositorio del cohort y la otra
+En este proyecto deberás trabajar colaborativamente. Para ello, una de laseberá forkear el repositorio del cohort y la otra
 integrante **deberá hacer un fork del repositorio de su compañera**. Luego de
 esto, deberás
 [configurar](https://help.github.com/articles/configuring-a-remote-for-a-fork/)
