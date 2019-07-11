@@ -1,5 +1,12 @@
 # **Data Lovers**
+Este proyecto consiste en una pagina web con datos de la serie Rick and Morty, podrás seleccionar a tu personaje favorito,seleccionar el estado, origen género, y finalmente podrás ver su ficha.
+además en esta página encontrarán enlaces para ver capitulos, para ir a la comunidad de la serie y estadística.
 
+Al principio diseñamos un flujo y un modelo de baja fidelidad el cuál se veía asi
+
+diseñamos uno de alta fidelidad el cual se veia asi
+
+al seguir estudiando sobre los diseños que se usan actualmente decidimos quitar la imagen de fondo y basándonos en algunas encuentas a usuarios que les gusta la serie agregamos un botón de comunidad y ver capitulos que tienen funcionalidad.
 ## **Índice**
 
 * [Preámbulo](#preámbulo)
@@ -292,19 +299,6 @@ global con la data correspondiente a esa fuente de datos.
 
 Por ejemplo, si descomentamos la siguiente línea:
 
-```html
-<!-- <script src="./data/worldbank/worldbank.js"></script> -->
-```
-
-La línea quedaría así:
-
-```html
-<script src="./data/worldbank/worldbank.js"></script>
-```
-
-Y ahora tendríamos la variable global `WORLDBANK` disponible en nuestros otros
-scripts (como `src/data.js` o `src/main.js`).
-
 ### `src/main.js`
 
 Recomendamos usar `src/main.js` para todo tu código que tenga que ver con
@@ -425,8 +419,7 @@ Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
 5. A codear se ha dicho! :rocket:
 
 <!--
-En este proyecto deberás trabajar colaborativamente. Para ello, una de las
-integrantes del equipo deberá forkear el repositorio del cohort y la otra
+En este proyecto deberás trabajar colaborativamente. Para ello, una de laseberá forkear el repositorio del cohort y la otra
 integrante **deberá hacer un fork del repositorio de su compañera**. Luego de
 esto, deberás
 [configurar](https://help.github.com/articles/configuring-a-remote-for-a-fork/)
@@ -466,66 +459,4 @@ compañera:
 
 * Un [pull request](https://help.github.com/articles/about-pull-requests/) (PR)
   te permite solicitar la inclusión de cambios al repositorio original (tu punto
-  de partida) en GitHub. Cuando un PR es abierto, este permite solicitar,
-  discutir y revisar los cambios realizados con todos los colaboradores y
-  agregar otros commits antes de que los cambios sean incluidos al repositorio
-  original.
--->
-
-***
-
-## **10. Contenido de referencia**
-
-### **Diseño de experiencia de usuario (User Experience Design)**
-
-* Investigación con usuario
-* [Principios de diseño visual](https://lms.laboratoria.la/cohorts/scl-2019-01-bc-core-commoncore-scl008/courses/diseno-visual)
-
-
-### **Desarrollo Front-end**
-
-* [Unidad de testing en curso de JavaScript en LMS](https://lms.laboratoria.la/cohorts/scl-2019-06-bc-core-scl010/courses/javascript/11-testing/00-opening)
-* [Unidad de arreglos en curso de JavaScript en LMS](https://lms.laboratoria.la/cohorts/scl-2019-06-bc-core-scl010/courses/javascript/04-arrays/01-arrays)
-* [Unidad de objetos en curso de JavaScript en LMS](https://lms.laboratoria.la/cohorts/scl-2019-06-bc-core-scl010/courses/javascript/05-objects/01-objects)
-* [Unidad de funciones en curso de JavaScript en LMS](https://lms.laboratoria.la/cohorts/scl-2019-06-bc-core-scl010/courses/javascript/03-functions/00-opening)
-* [Unidad de DOM en curso de Browser JavaScript en LMS](https://lms.laboratoria.la/cohorts/scl-2019-06-bc-core-scl010/courses/browser/02-dom/00-opening)
-* [Array en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array)
-* [Array.sort en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/sort)
-* [Array.map en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/map)
-* [Array.filter en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/filter)
-* [Array.reduce en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/reduce)
-* [Array.forEach en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/forEach)
-* [Object.keys en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Object/keys)
-* [Object.entries en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Object/entries)
-* [Fetch API en MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
-* [json.org](https://json.org/json-es.html)
-
-### **Herramientas**
-
-* [Git](https://git-scm.com/)
-* [GitHub](https://github.com/)
-* [GitHub Pages](https://pages.github.com/)
-* [Node.js](https://nodejs.org/)
-
-***
-
-## **Checklist**
-
-* [ ] Usa VanillaJS.
-* [ ] No hace uso de `this`.
-* [ ] Pasa linter (`npm pretest`)
-* [ ] Pasa tests (`npm test`)
-* [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
-  lines y branches.
-* [ ] Incluye _Definición del producto_ clara e informativa en `README.md`.
-* [ ] Incluye historias de usuario en `README.md`.
-* [ ] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
-  `README.md`.
-* [ ] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
-  en `README.md`.
-* [ ] Incluye link a Zeplin en `README.md`.
-* [ ] Incluye el listado de problemas que detectaste a través de tests de
-  usabilidad en el `README.md`.
-* [ ] UI: Muestra lista y/o tabla con datos y/o indicadores.
-* [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
-* [ ] UI: Permite filtrar data en base a una condición.
+  de partida) en GitHub. Cuando un PR es abierto, este permite solici
