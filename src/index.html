@@ -1,70 +1,5 @@
 <!DOCTYPE html>
-<html>
-
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RickandMorty.com</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body onload="llenarDatos()">
-    <header id="header" class="fullHeader">
-      
-      <div>
-        <nav id="menu" class="menu">
-          <ul class="menuNavegation">
-            <li class="current"><a href="">Inicio</a></li>
-            <li class="current"><a href="">Quienes Somos</a></li>
-            <li class="current"><a href="https://www.formulatv.com/series/rick-y-morty/capitulos/">Capitulos</a></li>
-            <li class="current"><a href="">Contacto</a></li>
-            <li class="current"><a href="https://comunidad.fandom.com/wiki/Rick_y_Morty">Comunidad</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main class="center">
-    <div class="row">
-      <div id="titleHtml">
-        <h1>¡Encuentra a tu personaje favorito!</h1>     
-      </div>
-      <div id="searchEngine" class="search"> 
-        <label for="character" class="search">Personajes</label>
-        <select  id="formCharacter">
-           <option value=""> Seleccione un Personaje</option>
-        </select>
-        <label for="" class="search">Estatus</label>
-        <select id="formStatus">
-            <option value=""> Seleccione un estatus</option>
-        </select>
-        <label for="" class="search">Especies</label>
-        <select id="formSpecies">
-            <option value=""> Seleccione una especie</option>
-        </select>
-        <label for="" class="search">Genero</label>
-        <select id="formGender">
-            <option value=""> Seleccione un género</option>
-        </select>
-      </div>
-      <br>
-      <br>
-      <div id="btnSearch" class="btnSearch">
-        <button type="button" onclick="addImg()"> Buscar </button>   
-      </div>
-      <div id= "tarjeta">
-
-      </div>
-      <div id="results" class="contents"></div>
-    </div>
-      </main>
-    <script src="./data/rickandmorty/rickandmorty.js"></script> 
-    <!--<script src="app.js"></script>-->
-   <script src="main.js"></script>
-   <script src="data.js"></script>
-  </body>
-</html>
-        
-        
-<!--
+<html> 
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -115,8 +50,11 @@
                     </div>
                    
                 </div>
-                
+                <br>
+                <br>
+                <div class="row">
                 <div id="result" class="contents"></div>
+            </div>
             </div>
         </main>
         <script src="./data/rickandmorty/rickandmorty.js"></script>
@@ -125,5 +63,3 @@
         <script src="main.js"></script> 
     </body>
 </html>
-
-  -->
