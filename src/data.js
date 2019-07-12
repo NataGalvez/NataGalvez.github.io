@@ -21,11 +21,12 @@ window.workData = {
 			valueSelect.add(list);
 		}
 	},
-	showCard: (valueSelect, propiedad)=>{
+	showCard: (valueSelect, propiedad, order="a")=>{
 		let arr=["image","name","status","species","gender"];
 		let arrSpanish=["Imagen","Nombre", "Estado", "Especie","Genero"];
 		window.div.appendChild(window.fatherDiv);
 		let filterCondition= data.filter((dato)=>dato[propiedad]===valueSelect);
+			workData.orderArr(filterCondition, order);
 			for (let a = 0; a < filterCondition.length; a++) {
 				for (let i = 0; i <arr.length; i++) {
 					if (arr[i]=="image") {
@@ -39,10 +40,18 @@ window.workData = {
 					}
 				}
 			}
-	}
+	},
 	
-}
+	orderArr: (filterCondition, order="a")=>{
+		if (order=="a") {
+			let order=filterCondition.sort((a,b)=> a.name.localeCompare(b.name));
 
+		}else{
+			let order=filterCondition.sort((a,b)=> a.name.localeCompare(b.name)).reverse();
+		}
+
+	}	
+}
 /*crear funcion para llenar status
 function llenarStatus(idSelect)
 {
