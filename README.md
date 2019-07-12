@@ -1,9 +1,12 @@
 # **Data Lovers**
 **Rick And Morty**
 
-Este proyecto consiste en una pagina web con datos de la serie Rick and Morty, podrás seleccionar a tu personaje favorito,seleccionar el estado, origen género, y finalmente podrás ver su ficha.
-además en esta página encontrarán enlaces para ver capitulos, para ir a la comunidad de la serie y estadística.
+Este proyecto consiste en una pagina web con datos de la serie Rick and Morty, podrás seleccionar a tu personaje favorito o seleccionar por estado, origen, género, donde  finalmente podrás ver su ficha.
+Además en esta página encontrarán enlaces para ver capitulos y disfrutar de tu serie favorita. 
 
+# ** Objetivos del proyecto**
+Nos proposimos crear una pagina web con la finalidad de simplificar algunas dudas y curiosidades que puedan teener los usuarios de la serie Rick and Morty. Querer conocer a los personajes y encontrar los datos principales de éstos, también quisimos agregar un plus y  generar link de acceso a capitulos gratuitos. 
+# **Diseño inicial**
 Al principio diseñamos un flujo y un modelo de baja fidelidad el cuál se veía asi
 ![alt test](http://www.imagenonline.com/imagenes/2/1501-2b5e935c1b824e2a274054366391dfa611785ab6.jpg)
 ![alt test](http://www.imagenonline.com/imagenes/2/1502-347d5af6614c06fa836083ebd424605814a65fd9.jpg)
@@ -14,13 +17,16 @@ También un flujo basado en historia de usuario 1
 Diseñamos uno de alta fidelidad el cual se veia asi
 ![alt test](http://www.imagenonline.com/imagenes/2/1505-e9b9753615a137397b927125a17a1068e89933e9.jpg)
 
+# **Historia Usuario 1**
+ Como usuario de la aplicación qusiera poder buscar solo a mis personajes favoritos y poder ver su información principal, con la finalidad de conocer mejor los personajes.
+# **Historia Usuario 2**
+Me gustaría estuviese la opción de filtrar por datos adicionales, como, solo poder saber los que son de especie Alien, o solo los que se consideran genero feminino. 
+# **Historia Usuario 3**
+Como usuario, quisiera tener la posibilidad de ordenar la data de maner alfabetica, tanto ascendente como descendentemente. 
+# ¨¨Diseño Final**
+Luego de revisar papginas webs y ver que estilos se aplican en la mayoría, decidimos dejar el diseño que verán a continuación.
 
-al seguir estudiando sobre los diseños que se usan actualmente decidimos quitar la imagen de fondo y basándonos en algunas encuentas a usuarios que les gusta la serie agregamos un botón de comunidad y ver capitulos que tienen funcionalidad.
-Co,o resultado final la página se ve así:
 
-![alt test](http://www.imagenonline.com/imagenes/2/1506-6de3470df1597c322e4dd9dc8edfd94066e57a98.jpg)
-
-El usuario escoge personaje, genero, estado, origen hace click en botón buscar y se muestra la tarjeta del personaje
 
 
   
