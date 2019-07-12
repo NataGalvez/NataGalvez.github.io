@@ -24,15 +24,18 @@ window.workData = {
 	showCard: (valueSelect, propiedad, order="a")=>{
 		let arr=["image","name","status","species","gender"];
 		let arrSpanish=["Imagen","Nombre", "Estado", "Especie","Genero"];
-		window.div.appendChild(window.fatherDiv);
 		let filterCondition= data.filter((dato)=>dato[propiedad]===valueSelect);
 			workData.orderArr(filterCondition, order);
 			for (let a = 0; a < filterCondition.length; a++) {
+				div=document.getElementById("result");
+				fatherDiv=document.createElement("div");
+				fatherDiv.className="etiquet";
+				div.appendChild(fatherDiv);
 				for (let i = 0; i <arr.length; i++) {
 					if (arr[i]=="image") {
 						let img=document.createElement("img");
 						img.src=filterCondition[a][arr[i]];
-						window.fatherDiv.appendChild(img);
+						fatherDiv.appendChild(img);
 					}else{
 						let p=document.createElement("p");
 						p.innerHTML=arrSpanish[i]+":"+filterCondition[a][arr[i]];
@@ -42,7 +45,6 @@ window.workData = {
 			}
 	},
 	
-<<<<<<< HEAD
 	orderArr: (filterCondition, order="a")=>{
 		if (order=="a") {
 			let order=filterCondition.sort((a,b)=> a.name.localeCompare(b.name));
@@ -143,6 +145,3 @@ function addImg()
 	idTarjeta.appendChild(img)
 }
 */
-=======
-}
->>>>>>> d6939641889f834499414dd1c9bc704208f6ff9f

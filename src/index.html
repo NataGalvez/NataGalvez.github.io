@@ -7,30 +7,27 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <header id="header" class="fullHeader">
-            
-            <div>
-                <nav id="menu" class="menu">
-                    <ul class="menuNavegation">
-                        <li class="current"><a href="">Inicio</a></li>
-                        <li class="current"><a href="">Capitulos</a></li>
-                        <li class="current"><a href="">Estadísticas</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
         <main class="center">
             <div class="row">
                 <div id="titleHtml">
                     <h1>¡Encuentra a tu personaje favorito!</h1>
                 </div>
-                <div id="searchEngine" class="search">
+                <div class="buttonContainer">
+                  <button id="btnSingle" class="button">Buscar por personaje</button>
+                </div>
+                <div class="buttonContainer">
+                  <button id="btnMultiple" class="button">Busqueda masiva</button>
+                </div>
+                <div class="buttonContainer">
+                  <button type="buttonContainer" class="button"> Capitulos online</button>
+                </div>
+                <div id="single" class="searchContainer">
                     <label for="character" class="character">Personajes</label>
                     <select  id="formCharacter">
                         <option value=""> Seleccione un Personaje</option>
                     </select>
                 </div>
-                <div class="search">
+                <div class="searchContainer" id="multiple" >
                     <label for="" class="search">Estatus</label>
                     <select id="formStatus">
                         <option value=""> Seleccione un estatus</option>
@@ -52,8 +49,8 @@
                       <label for="">Ordenar</label>
                       <input type="hidden" id="lastSearch">
                       <input type="hidden" id="lastValue">
-                      <button type="button" id="a-z">A-Z</button>
-                      <button type="button" id="z-a">Z-A</button>
+                      <button type="button" id="a-z" class="buttonOrder">A-Z</button>
+                      <button type="button" id="z-a" class="buttonOrder">Z-A</button>
                     </div>
                     
                    
@@ -64,10 +61,12 @@
                 <div id="result" class="contents"></div>
             </div>
             </div>
+            <footer>
+              <img src="../img/footer.png" alt="footer">
+            </footer>
         </main>
         <script src="./data/rickandmorty/rickandmorty.js"></script>
         <script src="data.js"></script>
         <script src="main.js"></script>
-        <script src="main.js"></script> 
     </body>
 </html>

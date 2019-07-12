@@ -26,7 +26,12 @@ a{
 	font-size: 25px;
 }
 body{
-	background-color: #E58137;
+	color: white;
+	background-color: black;
+	padding: 0 100px 0 100px; /*arribaderechaabajoizquierda*/
+	font-size: 0.8rem;
+	font-family: sans-serif;
+
 }
 
 
@@ -35,34 +40,72 @@ body{
 	font-family: sans-serif;
 	font-weight: bold;
 	margin: 3px;
+	width: 19.2%;
+	border: 1px white solid;
+	border-radius: 0px 0px 20px 20px;
+	background: white;
+	color: black;
+}
+.etiquet img{
+	width: 100%;
+
 }
 
 
 .search{
 	display: inline;
+
 }
 
-
-/*body{
-	background: url(https://wallpaperscute.com/wp-content/uploads/2018/04/Rick-and-Morty-iPhone-8-Wallpaper.jpg) no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	opacity: 0.9;}
-
-
-header{
-	background: rgb(185, 117, 117); 
-
-.contents{
+#multiple{
+	display: none;
+}
+#single{
+	display: none;
+}
+.button{
+	width: 200px;
+	height: 50px;
+	border-radius: 30px;
+	border: 5px;
+	background-color: #01B1FD;
+	color: white;
+	font-size: 1rem;
 	font-family: sans-serif;
-	font-weight: bold;
-	font-size: 17px;
-	float: left;
-	}
-*/
-
+	letter-spacing: 1px;
+}
+.buttonContainer{
+	display: inline-block;
+}
+.row{
+	text-align: center;
+}
+footer img{
+	width: 100%;
 	
+	
+}
+.searchContainer{
+	padding: 50px;
+	border: 1px white solid;
+	border-radius: 100px;
+	margin-top: 10px;
 
-
+}
+select{
+	height: 30px;
+}
+label{
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+.buttonOrder{
+	height: 30px;
+	border-radius: 30px;
+	border: 5px;
+	background-color: #01B1FD;
+	color: white;
+	font-size: 0.8rem;
+	font-family: sans-serif;
+	letter-spacing: 1px;
+}
