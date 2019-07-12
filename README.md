@@ -25,6 +25,9 @@ Me gustaría estuviese la opción de filtrar por datos adicionales, como, solo p
 Como usuario, quisiera tener la posibilidad de ordenar la data de maner alfabetica, tanto ascendente como descendentemente. 
 # ¨¨Diseño Final**
 Luego de revisar papginas webs y ver que estilos se aplican en la mayoría, decidimos dejar el diseño que verán a continuación.
+<a href="https://ibb.co/SwnTk90"><img src="https://i.ibb.co/4RTyb5M/home.png" alt="home" border="0"></a>
+<a href="https://ibb.co/5h2F2qH"><img src="https://i.ibb.co/7tb4b7m/personaje.png" alt="personaje" border="0"></a>
+<a href="https://ibb.co/F6Q8tgg"><img src="https://i.ibb.co/qBHmwkk/personaje-massivo.png" alt="personaje-massivo" border="0"></a>
 
 
 
