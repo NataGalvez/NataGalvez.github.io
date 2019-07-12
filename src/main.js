@@ -1,4 +1,3 @@
-
 workData.fillSelect(workData.uniques("name"),"formCharacter");
 workData.fillSelect(workData.uniques("status"),"formStatus");
 workData.fillSelect(workData.uniques("species"),"formSpecies");

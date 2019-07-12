@@ -42,6 +42,7 @@ window.workData = {
 			}
 	},
 	
+<<<<<<< HEAD
 	orderArr: (filterCondition, order="a")=>{
 		if (order=="a") {
 			let order=filterCondition.sort((a,b)=> a.name.localeCompare(b.name));
@@ -142,3 +143,6 @@ function addImg()
 	idTarjeta.appendChild(img)
 }
 */
+=======
+}
+>>>>>>> d6939641889f834499414dd1c9bc704208f6ff9f
