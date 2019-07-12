@@ -1,3 +1,4 @@
+ 
 window.workData.fillSelect(window.workData.uniques("name"),"formCharacter");
 window.workData.fillSelect(window.workData.uniques("status"),"formStatus");
 window.workData.fillSelect(window.workData.uniques("species"),"formSpecies");
@@ -58,7 +59,7 @@ document.getElementById("z-a").addEventListener("click" , ()=>{
 	let lastSearch= document.getElementById("lastSearch").value;
 	let lastValue=document.getElementById("lastValue").value;
 	window.workData.showCard(lastValue,lastSearch,"z");
-})
+});
 
 /*function addDatesSelect(idElement, texto, valor)
 {
@@ -68,4 +69,5 @@ document.getElementById("z-a").addEventListener("click" , ()=>{
     listName.value= valor;
     character.add(listName);
 }*/
+
 

@@ -2,9 +2,10 @@ global.window = global;
 global.assert = require('chai').assert;
 require('../src/data');
 require('./data.spec.js');
-require('../src/data/rickandmorty');
+require('./src/data/rickandmorty/rickandmorty.js');
 
-	const show=[
+
+	/*const show=[
 	{
 		"name": "Rick Sanchez",
 		"status": "Alive"
@@ -18,24 +19,25 @@ require('../src/data/rickandmorty');
 		"status":"Dead"
 	},
 		
-	];
+	];*/
 
-describe('workData', () => {
+describe('showcard', () => {
 
 
-  it('debería ser un objeto', () => {
-    assert.equal(typeof workData, 'object');
+  it('debería ser un funcion', () => {
+    assert.equal(typeof showcard, 'function');
   });
 
-  describe('workData.filterCondition', () => {
+  /*describe('workData.showcard', () => {
 
     it('debería ser una función', () => {
-      assert.equal(typeof window.filterCondition, 'function');
+      assert.equal(typeof window.showcard, 'function');
     });
 
     it('debería retornar el objeto Alive al filtrar por "status"', ()=>{
-      assert.deepequal(window.filterCondition(show, "status"), status)
-    })
+      assert.deepEqual(window.showcard(show, "status"), status)
+    });
+    */
     
-  })
+  //})
 });

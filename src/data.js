@@ -2,7 +2,7 @@ const data= window.RICKANDMORTY.results;
 window.workData = { 
 	uniques: (property)=>{
 		let allArr=[];
-		for (let i = 0; i < data.length; i++) {
+		for (let i = 0; i <data.length; i++) {
 			allArr.push(data[i][property]);
 		}
 		return [...new window.Set(allArr)]
