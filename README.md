@@ -18,9 +18,11 @@ Diseñamos uno de alta fidelidad el cual se veia asi
 ![alt test](http://www.imagenonline.com/imagenes/2/1505-e9b9753615a137397b927125a17a1068e89933e9.jpg)
 
 # **Historia Usuario 1**
-1. Como usuario de la aplicación qusiera poder buscar solo a mis personajes favoritos y poder ver su información principal, con la finalidad de conocer mejor los personajes.
-2. Me gustaría estuviese la opción de filtrar por datos adicionales, como, solo poder saber los que son de especie Alien, o solo los que se consideran genero feminino. 
-3. Como usuario, quisiera tener la posibilidad de ordenar la data de maner alfabetica, tanto ascendente como descendentemente. 
+ Como usuario de la aplicación qusiera poder buscar solo a mis personajes favoritos y poder ver su información principal, con la finalidad de conocer mejor los personajes.
+# **Historia Usuario 2**
+Me gustaría estuviese la opción de filtrar por datos adicionales, como, solo poder saber los que son de especie Alien, o solo los que se consideran genero feminino. 
+# **Historia Usuario 3**
+Como usuario, quisiera tener la posibilidad de ordenar la data de maner alfabetica, tanto ascendente como descendentemente. 
 # ¨¨Diseño Final**
 Luego de revisar papginas webs y ver que estilos se aplican en la mayoría, decidimos dejar el diseño que verán a continuación.
 
