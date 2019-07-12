@@ -4,9 +4,6 @@ require('../src/data');
 require('./data.spec.js');
 require('../src/data/rickandmorty');
 
-
-
-describe('workData', () => {
 	const show=[
 	{
 		"name": "Rick Sanchez",
@@ -17,25 +14,28 @@ describe('workData', () => {
 		"status": "unknown"
 	},
 	{
-		"name": "Gear Cop",
-   		"status": "Dead"
+		"name":"Gear Cop",
+		"status":"Dead"
 	},
 		
-	]
+	];
+
+describe('workData', () => {
+
 
   it('debería ser un objeto', () => {
     assert.equal(typeof workData, 'object');
   });
 
-  describe('workData.showCard', () => {
+  describe('workData.filterCondition', () => {
 
     it('debería ser una función', () => {
-      assert.equal(typeof workData.showCard, 'function');
+      assert.equal(typeof window.filterCondition, 'function');
     });
 
-    it('debería debería retornar el objeto Rick Sanchez al filtrar por status Alive', ()=>{
-      assert.deepequal(workData.showCard(show, "Alive"), [{"name": "Rick Sanchez","status": "Alive"}])
+    it('debería retornar el objeto Alive al filtrar por "status"', ()=>{
+      assert.deepequal(window.filterCondition(show, "status"), status)
     })
     
   })
-  
+});

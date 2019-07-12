@@ -25,21 +25,21 @@ window.workData = {
 		let arr=["image","name","status","species","gender"];
 		let arrSpanish=["Imagen","Nombre", "Estado", "Especie","Genero"];
 		let filterCondition= data.filter((dato)=>dato[propiedad]===valueSelect);
-			workData.orderArr(filterCondition, order);
+			window.workData.orderArr(filterCondition, order);
 			for (let a = 0; a < filterCondition.length; a++) {
-				div=document.getElementById("result");
-				fatherDiv=document.createElement("div");
-				fatherDiv.className="etiquet";
-				div.appendChild(fatherDiv);
+				window.div=document.getElementById("result");
+				window.fatherDiv=document.createElement("div");
+				window.fatherDiv.className="etiquet";
+				window.div.appendChild(window.fatherDiv);
 				for (let i = 0; i <arr.length; i++) {
 					if (arr[i]=="image") {
 						let img=document.createElement("img");
 						img.src=filterCondition[a][arr[i]];
-						fatherDiv.appendChild(img);
+						window.fatherDiv.appendChild(img);
 					}else{
 						let p=document.createElement("p");
 						p.innerHTML=arrSpanish[i]+":"+filterCondition[a][arr[i]];
-						fatherDiv.appendChild(p);
+						window.fatherDiv.appendChild(p);
 					}
 				}
 			}
@@ -47,10 +47,10 @@ window.workData = {
 	
 	orderArr: (filterCondition, order="a")=>{
 		if (order=="a") {
-			let order=filterCondition.sort((a,b)=> a.name.localeCompare(b.name));
+			window.order=filterCondition.sort((a,b)=> a.name.localeCompare(b.name));
 
 		}else{
-			let order=filterCondition.sort((a,b)=> a.name.localeCompare(b.name)).reverse();
+			window.order=filterCondition.sort((a,b)=> a.name.localeCompare(b.name)).reverse();
 		}
 
 	}	
