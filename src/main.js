@@ -7,12 +7,26 @@ function cleanDiv(){
 	document.getElementById("result").innerHTML="";
 }
 document.getElementById("btnSingle").addEventListener("click", ()=>{
+	cleanDiv();
 	document.getElementById("single").style.display="block";
 	document.getElementById("multiple").style.display="none";
+	document.getElementById("percent").style.display="none";
 })
 document.getElementById("btnMultiple").addEventListener("click", ()=>{
+	cleanDiv();
 	document.getElementById("single").style.display="none";
+	document.getElementById("percent").style.display="none";
 	document.getElementById("multiple").style.display="block";
+})
+document.getElementById("btnStatistics").addEventListener("click", ()=>{
+	cleanDiv();
+	document.getElementById("single").style.display="none";
+	document.getElementById("multiple").style.display="none";
+	document.getElementById("percent").style.display="block";
+
+})
+document.getElementById("btnAlives").addEventListener("click", ()=>{
+	document.getElementById("divCalculate").innerHTML= "El porcentaje de personajes vivos es de " + workData.computeStats("status", "Alive")+ "%";
 })
 document.getElementById("formCharacter").addEventListener("change", ()=>{
 	//workData.cleanDiv();
@@ -25,7 +39,7 @@ document.getElementById("formCharacter").addEventListener("change", ()=>{
 document.getElementById("formStatus").addEventListener("change", ()=>{
 	cleanDiv();
 	let valueSelect=document.getElementById("formStatus").value;
-	window.workData.showCard(valueSelect,"status");
+	window.workData.showCard(valueSelect, "status");
 	document.getElementById("lastSearch").value="status";
 	document.getElementById("lastValue").value=valueSelect;
 })
@@ -60,14 +74,3 @@ document.getElementById("z-a").addEventListener("click" , ()=>{
 	let lastValue=document.getElementById("lastValue").value;
 	window.workData.showCard(lastValue,lastSearch,"z");
 });
-
-/*function addDatesSelect(idElement, texto, valor)
-{
-    let character = document.getElementById(idElement);
-    let listName = document.createElement("option");
-    listName.text = texto;
-    listName.value= valor;
-    character.add(listName);
-}*/
-
-

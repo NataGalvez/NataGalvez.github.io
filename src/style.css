@@ -109,3 +109,10 @@ label{
 	font-family: sans-serif;
 	letter-spacing: 1px;
 }
+#percent{
+	display: none;
+}
+.calculate{
+	font-size: 40px;
+	font-weight: bold;
+}
